@@ -1,0 +1,6 @@
+- kind: Movie
+  properties:
+    - director: director
+    - genre: genre
+    - actor: actor
+    - created: created

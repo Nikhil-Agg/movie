@@ -1,0 +1,7 @@
+{
+    "PROJECT_ID": "moviefy-387215",
+    "IMDB": {
+        "API_KEY": "b822ff4c",
+        "SEARCH_URL": "http://www.omdbapi.com/?t={title}&apikey={api_key}"
+    }
+}

@@ -1,0 +1,26 @@
+{% extends "nav.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="container text-center">
+
+        <p>Upload any Movie onto our site. Just provide us with the title and we will do the rest for you!!</p>
+    </div>
+</div>
+<div class="container-fluid bg-3 text-center">
+    <div class="row">
+        <div class="col-sm-20">
+            <div style="text-align:center;width: 300px;margin: 0 auto;">
+                <form action="/upload/movie" method="post">
+                    <div class="form-group">
+                        <label for="InputTitle">Movie Title</label>
+                        <input type="title" class="form-control" id="title"
+                            name="title" placeholder="Guardins of the Galaxy">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload Movie</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
