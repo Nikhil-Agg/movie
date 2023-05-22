@@ -1,14 +1,8 @@
 runtime: python27 # or another supported version
-threadsafe: false
+threadsafe: yes
 
 instance_class: F2
 
 handlers:
-- url: /
-  script: service.py
-
-- url: /search/movie
-  script: service.py
-
-- url: /upload/movie
-  script: service.py
+- url: .*  # This regex directs all routes to main.app
+  script: service.app
