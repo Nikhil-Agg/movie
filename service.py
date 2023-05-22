@@ -8,8 +8,8 @@ app = webapp2.WSGIApplication(MOVIE_ROUTES, debug=True)
 
 def main():
     Initialize.initialize_service_startup_dependencies()
-    httpserver.serve(app, host='127.0.0.1', port='8080')
-    # app.run()
+    # httpserver.serve(app, host='127.0.0.1', port='8080')
+    app.run()
 
 if __name__ == '__main__':
     main()
